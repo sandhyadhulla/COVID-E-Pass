@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COVID E-ticket</title>
+        <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script class="press-logo" src="https://kit.fontawesome.com/3ea53c1d6b.js" crossorigin="anonymous"></script>
+        <style type="text/css">
+        body{
+            font-family: 'Montserrat',sans-ser~if;
+            background-color:lavenderblush;
+            color: #fff;
+        }
+        /* Register */
+        #info{
+            margin-left: 10px;
+        }
+        .register-info{
+            font-size: x-large;
+        }
+        .register-button{
+            margin-top:2%;
+            border:none;
+        }
+        button{
+            color: #fff;
+            background-color:#1A385A;
+            font-size: 20px;
+            padding:2% 5%;
+            cursor: pointer;
+        }
+        .travel-safe-image{
+            margin:20px 30px;
+            max-width:790px;
+            max-height:230px;
+            overflow: hidden;
+        }
+        /* Title */
+        #title{
+            font-weight:bold;
+            padding: 2% 6% 4%;
+        }
+        .brand-image{
+            color: #fff;
+            padding:5px;
+        }
+        .travel-image{
+            margin: 220px 0px 0px 100px;
+            max-width:390px;
+            max-height: 255px;
+            overflow: hidden;
+        }
+        /* Form */
+        #sign-up-form{
+            padding-bottom: 3%;
+        }
+        .submit{
+            margin-top: 5%;
+        }
+        #ui{
+            padding-top: 50px;
+        }
+        /* About */
+        .about-us{
+            text-align: center;
+            padding:7% 10%;
+        }
+        .check-circle{
+            padding-bottom: 2%;
+        }
+        /* Safety */
+        #Safety{
+            padding: 7% 10%;
+        }
+        .card{
+            margin: 2%;
+            text-align: center;
+        }
+        .card-header{
+            background-color:#1A385A;
+        }
+        .card-body{
+            color: #1A385A;
+        }
+        .safety-icon{
+            margin: 15px 80px 25px 15px;
+            color: #1A385A;
+        }
+        /* Contact */
+        #Contact{
+            padding: 7% 10%;
+            text-align: center;
+        }
+        .social-icon{
+            margin:20px 10px;
+        }
+        h3{
+            font-weight: 900;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <section id="title">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="" style="color:darkblue"><i class="fas fa-subway brand-image" style="color:orange"></i>COVID - 19 Lockdown ePass - 2021</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto" >
+                <li class="nav-item">
+                    <a class="nav-link" href="#About" style="color:black;"><i class="fas fa-info-circle brand-image" style="color: green"></i> About</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Safety" style="color: black"><i class="fas fa-hand-holding-medical brand-image "  style="color: green"></i> Safety</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contact" style="color: black"><i class="fas fa-address-book brand-image"  style="color: green"></i> Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+        <section id="info">
+            <div class="container">
+                <h3 style="color: green">REGISTER</h3>
+                <section id="sign-up-form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="ui">
+                                        <form id="login-form" class="form" action="/" method="post">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="fname" class="text-info" >First Name:</label>
+                                                    <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter your firstname"  required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="lname" class="text-info">Last Name:</label>
+                                                    <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter your lastname" required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <label for="email" class="text-info">Email:</label>
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="source_state" class="text-info">Source State:</label>
+                                                    <input type="text" name="source_state" id="source_state" class="form-control" placeholder="Enter source state" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="source" class="text-info">Source:</label>
+                                                    <input type="text" name="source" id="source" class="form-control" placeholder="Enter district" required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="dest_state" class="text-info">Destination State:</label>
+                                                    <input type="text" name="dest_state" id="dest_state" class="form-control" placeholder="Enter destination state" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="destination" class="text-info">Destination:</label>
+                                                    <input type="text" name="destination" id="destination" class="form-control" placeholder="Enter destination district" required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="p_no" class="text-info">Phone Number:</label>
+                                                    <input type="text" name="phoneNumber" id="p_no" class="form-control" placeholder="Enter phone number" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="idcard" class="text-info">Aadhar Number:</label><br>
+                                                    <input type="text" name="idcard" class="form-control" placeholder="Enter aadhar number">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="date" class="text-info">Date:</label>
+                                                    <input type="date" name="trip" id="date" class="form-control" required>
+                                                </div>
+                                            </div>
+                                    <br>
+                                <input type="submit" name="submit" class="btn btn-primary btn-block btn-md submit">
+                            </form>
+                        </div>
+                    </div>
+                 <div class="col" >
+                        <img src="https://www.rentcafe.com/blog/wp-content/uploads/sites/5/2021/02/traveling-during-pandemic.png" height="490px" width="430px">
+                 </div>
+                        </div>
+
+             </div>
+            </div>
+
+
+
+        </section>
+        <section id="Safety">
+            <div class="container">
+                <h2 style="color:darkmagenta">Safety Precautions</h2>
+            <div class="row" style="padding-left: 100px;padding-top: 20px">
+                <img src="https://images.news.iu.edu/dams/jknpiqrusu_w768.jpg" height="380px" width="800px">
+            </div>
+            </div>
+        </section>
+
+                </div>
+            </div>
+        </section>
+
+    <section id="About">
+        <div class="about-us" >
+            <span class="check-circle fas fa-check-circle fa-4x"></span>
+            <h4 style="color: black">Travel safe with us</h4>
+            <div class="info" style="color: black">
+                we ensure our trips are safe for everyone. Our health and safety policies follow
+                recommendations from the World Health Organization and the World Travel & Tourism Council’s
+                (WTTC) Safe Travel protocols for tour operators. Before we resume trips in any destination,
+                we undergo number of COVID-19 patients in the destination and ensure all the team has been
+                trained with COVID-19 health and safety training.
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" style="color:d">
+        <div class="contact-us" style="color: black" >
+            <h3><i class="far fa-comment-alt brand-image"></i> Help Us Improve</h3>
+            <i class="social-icon fab fa-facebook-f fa-2x"></i>
+            <i class="social-icon fab fa-twitter fa-2x"></i>
+            <i class="social-icon fab fa-instagram fa-2x"></i>
+            <i class="social-icon fas fa-envelope fa-2x"></i>
+            <p>© Copyright 2021 Sandhya</p>
+        </div>
+    </section>
+    </body>
+
+</html>
